@@ -51,7 +51,7 @@ const InitUserService = ((req,res)=>{
     (error,results)=>{
         if (error) throw error;
         // If the account exists
-        console.log(results);
+        console.log('resulttttt by abaynkar',results);
         
         res.end();
             }
