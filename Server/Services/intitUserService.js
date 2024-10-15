@@ -27,11 +27,11 @@
  *                                                                             *
  * File: /Services/intitUserService.js                                         *
  * Project: Server                                                             *
- * Created Date: Tuesday, October 15th 2024, 8:31:05 pm                        *
+ * Created Date: Tuesday, October 15th 2024, 8:35:00 pm                        *
  * Author: Vishnu <vishnu@codestax.ai>                                         *
  * -----                                                                       *
- * Last Modified:                                                              *
- * Modified By:                                                                *
+ * Last Modified: October 15th 2024, 8:35:57 pm                                *
+ * Modified By: Vishnu                                                         *
  * -----                                                                       *
  * Any app that can be written in JavaScript,                                  *
  *     will eventually be written in JavaScript !!                             *
@@ -44,6 +44,7 @@
 const db = require('./dbService')
 const InitUserService = ((req,res)=>{
     console.log("Init User Service  invoked");
+    console.log("Changes for vishnu");  
     const Uid = req.body.Uid;
     db.query("INSERT INTO tracker (uid) VALUES (?);",
     [Uid],
